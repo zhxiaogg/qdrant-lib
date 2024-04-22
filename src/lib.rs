@@ -5,6 +5,10 @@ mod helpers;
 mod instance;
 mod ops;
 
+pub use segment::types::{
+    Condition, FieldCondition, Filter, IntPayloadType, Match, MatchAny, MatchExcept, MatchText,
+    MatchValue, PayloadKeyType, ValueVariants,
+};
 use std::backtrace::Backtrace;
 use std::mem::ManuallyDrop;
 use std::panic;
